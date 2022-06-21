@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.name {
+background-color: red;
+}
+
+.name h1 {
+    text-align: center;
+}
+.main
+{
+    background-color: yellow;
+    padding: 10px;
+}
+.main p {
+    text-align:  center;
+}

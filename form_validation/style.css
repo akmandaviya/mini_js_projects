@@ -1,0 +1,48 @@
+
+.box {
+    margin-left: 600px;
+    margin-top: 200px;
+    padding: 15px;
+    border: 2px solid black;
+    width: max-content;
+    background-color: yellowgreen;
+}
+
+
+
+.list {
+    padding: 10px;
+    margin: 50px;
+    background-color: lightyellow;
+}
+
+
+li{
+    list-style-type: none;
+    color: black;
+    font-weight: bolder;
+}
+
+li #lname{
+    background-color: aqua;
+}
+
+li #age{
+    background-color: aqua;
+}
+
+
+li #email{
+    background-color: aqua;
+}
+
+
+li #fname{
+    background-color: aqua;
+}
+
+.wel h1 {
+    text-align: center;
+    color: red;
+    border: 2px solid black;
+}

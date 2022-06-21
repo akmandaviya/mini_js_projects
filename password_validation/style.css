@@ -1,0 +1,35 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.box {
+    border: 2px solid black;
+    width:max-content;
+    margin-left: 400px;
+    margin-top: 200px;
+    padding: 100px;
+    border-radius: 20px;
+}
+
+label {
+   font-weight: 500;
+   color: grey;
+}
+
+input {
+display: block;
+width: 100%;
+margin-top: 5px;
+padding: 12px;
+background-color: lightgoldenrodyellow;
+
+}
+
+p{
+    color: white;
+    padding: 10px;
+    font-size: large;
+    font-weight: bold;
+}

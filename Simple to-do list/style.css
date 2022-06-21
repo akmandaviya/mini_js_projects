@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.list-contianer {
+    padding: 10px;
+    border: 1px solid #bcb9b8;
+    width: 40%;
+    margin: auto;
+}
+
+.list-contianer .input {
+    width: 87%;
+    height: 20px;
+}
+
+.list-contianer .btn {
+    width: 50px;
+    height: 25px;
+}
+
+.list-contianer ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.list-contianer li {
+    color: darkgreen;
+    font-weight: bold;
+}
+
+.list-contianer li a {
+    float: right;
+    color: red;
+    text-decoration:none;
+}
+
+.list-contianer #error {
+    color: red;
+    font-size: 14px;
+}
+
+
