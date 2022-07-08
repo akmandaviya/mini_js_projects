@@ -4,27 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password_validate</title>
     <link rel="stylesheet" href="./style.css">
+    <title>Form</title>
 </head>
 <body>
 
-    <div class="box">
-    <label for="password">Password</label>
-    <input type="password" id="password" placeholder="Enter the password">
-  <br>
-    <label for="cnf-password">Confirm Password</label>
-    <input type="password" id="cnf-password" placeholder="confirm your password">
-  <br>
-  
-    <p id="message"></p>
+    <form class="box">
+       
+        <label for="fname">Firstname</label>
+        <input  type="text" name="firstname" placeholder="Enter the password" disabled>
+        <br>
 
-    <input type="button" value="Submit" onclick="checkPassword()">
+        <label for="lname">Lastname</label>
+        <input  type="text" name="firstname"  value="readonly value" placeholder="Enter the password" readonly>
+        <br>
 
-</div>
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password" placeholder="Enter the password">
+        <br>
+         
+        <p id="valid-password"></p>
 
+        <label for="cnf-password">Confirm Password</label>
+        <input id="cnf-password" type="password" name="cnf-password" placeholder="Confirm your password">
+        <br>
+    
+       <p id="message"></p>
+    
+        <button class="btn" type="button" name="Submit" onclick="submitForm()">Submit</button>
+    </form>
+    
+    
+    
+<script src="./script.js"></script>
 
-
-    <script src="./script.js"></script>
 </body>
 </html>

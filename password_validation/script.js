@@ -1,23 +1,41 @@
-function checkPassword() {
- let password = document.getElementById('password').value;
- let cnfPassword = document.getElementById('cnf-password').value;
- console.log(password,cnfPassword);
+function submitForm(){
 
- let message = document.getElementById('message');
- 
- if(password.length != 0) {
-      if(password == cnfPassword) {
-          message.textContent = "Password match";
-          message.style.backgroundColor="green";
-      }else {
-          message.textContent = "Password don't match";
-          message.style.backgroundColor="red";
-      }
- }
- else{
 
-     alert("Password can't be empty");
-     message.textContent= "";
- }
+    const password = document.getElementById('password').value
+    const confirmPassword = document.getElementById('cnf-password').value
+
+    let message = document.getElementById('message')
+    let validPassword = document.getElementById('valid-password')
+
+     if(password.length <= 5) {
+        validPassword.textContent="Password should be more than 5 letters"
+        validPassword.style.color="red"
+        validPassword.style.fontSize="10px"
+        validPassword.style.fontWeight="bolder"
+     }
+
+     else {
+        if(password.length != 0) {
+            if(password == confirmPassword) {
+                message.textContent="Password match"
+                message.style.color="green"
+                message.style.fontSize="10px"
+                message.style.fontWeight="bolder"
+            }else {
+                message.textContent="Password mismatch"
+                message.style.color="red"
+                message.style.fontSize="10px"
+                message.style.fontWeight="bolder"
+            }
+        }
+        else {
+            alert("Password cannot be empty")
+            message.textContent=""
+        }
+
+
+       validPassword.textContent="" 
+     }
+
+    
 }
-
