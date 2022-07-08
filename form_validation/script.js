@@ -3,7 +3,7 @@
     const lname = document.getElementById('lname');
     const age = document.getElementById('age');
     const email = document.getElementById('email');
-
+    
     function validateForm() {
     if(fname.value == "" || lname.value == "" || age.value == "" || email.value == "") {
         alert("Fields cannot be empty");
